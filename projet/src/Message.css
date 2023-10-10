@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    width: 15%;
+}
+
+.message{
+    width: 80%;
+    border-color: aqua;
+    margin-top: 0;
+    margin-left: 1%;
+}

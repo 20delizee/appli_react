@@ -1,0 +1,18 @@
+.Coucou{
+    color: aqua;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+  
+.raclure {
+    display: inline;
+    text-decoration: none;
+}
+.Test{
+    text-decoration: none;
+    margin-left: 1%;
+}
