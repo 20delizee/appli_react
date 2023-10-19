@@ -7,7 +7,6 @@ exports.createQuestion = (req, res, next) => {
     questionCategory: req.body.questionCategory,
     questionPoint: req.body.questionPoint,
     questionAnswer: req.body.questionAnswer,
-    updated_date: req.body.updated_date,
     
   });
   question.save().then(

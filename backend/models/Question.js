@@ -8,7 +8,6 @@ var questionSchema = new mongoose.Schema({
     questionCategory: String,
     questionPoint: String,
     questionAnswer: String,
-    updated_date: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model('Question', questionSchema);

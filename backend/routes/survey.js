@@ -5,9 +5,9 @@ const surveyCtrl = require('../controllers/survey');
 const auth = require('../middleware/auth')
 
 router.get('/',  surveyCtrl.getAllSurvey);
-router.post('/create', auth, surveyCtrl.createSurvey);
-router.get('/:id', auth, surveyCtrl.getOneSurvey);
-router.put('/modify:id', auth, surveyCtrl.modifySurvey);
-router.delete('/delete:id', auth, surveyCtrl.deleteSurvey);
+router.post('/create', surveyCtrl.createSurvey);
+router.get('/:id',  surveyCtrl.getOneSurvey);
+router.put('/modify:id',  surveyCtrl.modifySurvey);
+router.delete('/delete:id',  surveyCtrl.deleteSurvey);
 
 module.exports = router;

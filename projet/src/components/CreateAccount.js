@@ -69,26 +69,32 @@ function App() {
             Email:
           <input type="text" value={email} onChange={handleEmailChange} />
         </label>
+        <br/><br/>
         <label>
           password:
           <input type="text" value={password} onChange={handlePasswordChange} />
         </label>
+        <br/><br/>
         <label>
           lastname:
           <input type="text" value={lastname} onChange={handleLastnameChange} />
         </label>
+        <br/><br/>
         <label>
           firstname:
           <input type="text" value={firstname} onChange={handleFirstnameChange} />
         </label>
+        <br/><br/>
         <label>
           role:
           <input type="text" value={role} onChange={handleRoleChange} />
         </label>
+        <br/><br/>
         <label>
           group:
           <input type="text" value={group} onChange={handleGroupChange} />
         </label>
+        <br/><br/>
         <button type="submit">Envoyer</button>
       </form>
     </div>

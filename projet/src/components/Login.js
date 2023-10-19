@@ -6,6 +6,8 @@ function App() {
   const [errorMessage, setErrorMessage] = useState('');
   const storedEmail = sessionStorage.getItem('email');
   const storedToken = sessionStorage.getItem('token');
+  const isAuthenticated = sessionStorage.getItem('isAuthenticated');
+console.log('Is authenticated:', isAuthenticated);
   console.log(storedEmail);
   console.log(storedToken);
   const handleEmailChange = (e) => {
@@ -33,6 +35,8 @@ function App() {
           // Connexion réussie, enregistrer le token dans le stockage local ou les cookies
           sessionStorage.setItem('token', data.token);
           sessionStorage.setItem('email', email);
+          sessionStorage.setItem('isAuthenticated', 'true');
+          console.log('Is authenticated:', isAuthenticated);
           console.log(data.token);
           console.log(email);
           console.log('Connexion réussie');
